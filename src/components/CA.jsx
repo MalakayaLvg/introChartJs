@@ -103,20 +103,33 @@ const CA = () => {
         }
     }
 
+    const options2 = {
+        plugins: {
+            title: {
+                display: true,
+                text: "Overall"
+            },
+            legend : {
+                position: "bottom"
+            }
+        }
+    }
+
     return(
         <>
-            <h1>Chiffre d'affaire</h1>
-            <div className="CA-container">
-                <div className="d-flex">
-                    <div className="form-control w-50">
-                        <Line data={data1} options={options1} />
-                    </div>
-                    <div className="form-control w-50">
-                        <Line data={data2} options={options1} />
+            <div className="section-container form-control">
+                <h1>Chiffre d'affaire</h1>
+                <div className="CA-container">
+                    <div className="d-flex">
+                        <div className="form-control w-50">
+                            <Line data={data1} options={options1} />
+                        </div>
+                        <div className="form-control w-50">
+                            <Line data={data2} options={options2} />
+                        </div>
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

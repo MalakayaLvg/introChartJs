@@ -1,0 +1,25 @@
+data:  {
+  labels: [
+    "Product 1",
+    "Product 2",
+    "Product 3",
+  ],
+  datasets: [
+    {
+      label: "Nombres de vue",
+      axis: "y",
+      data: [100, 90, 80],
+      backgroundColor: [
+        "rgb(255,122,122)",
+      ]
+    },
+    {
+      label: "Nombres de ventes",
+      axis: "y",
+      data: [30, 40, 10],
+      backgroundColor: [
+        "rgb(255,212,132)",
+      ]
+    }
+  ]
+}

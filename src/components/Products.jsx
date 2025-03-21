@@ -89,14 +89,18 @@ const Products = () => {
 
     return (
         <>
-            <div className="pruducts-container">
+            <div className="section-container form-control">
                 <h1>Les produits</h1>
-                <div className="d-flex">
-                    <div className="form-control w-50">
+                <div className="row">
+                    <div className="col-6">
+                        <div className="form-control">
                             <Bar data={data1} options={options1} />
+                        </div>
                     </div>
-                    <div className="form-control w-50">
+                    <div className="col-6">
+                        <div className="form-control">
                             <Bar data={data2} options={options2} />
+                        </div>
                     </div>
                 </div>
             </div>
